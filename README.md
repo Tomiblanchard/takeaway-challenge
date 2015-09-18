@@ -4,7 +4,7 @@ Takeaway Challenge
 Task
 -----
 
-* Write a Takeaway program with the following user stories:
+We were given the following user stories to guide development of a simple command line takeaway menu + ordering system.
 
 ```sh
 As a customer
@@ -24,20 +24,18 @@ So that I am reassured that my order will be delivered on time
 I would like to receive a text such as "Thank you! Your order was placed and will be delivered before 18:52" after I have ordered
 ```
 
-* Hints on functionality to implement:
-  * ensure you have a list of dishes with prices
-  * place the order by giving the list of dishes, their quantities and a number that should be the exact total. If the sum is not correct the method should raise an error, otherwise the customer is sent a text saying that the order was placed successfully and that it will be delivered 1 hour from now, e.g. "Thank you! Your order was placed and will be delivered before 18:52".
-  * The text sending functionality should be implemented using Twilio API. You'll need to register for it. It’s free.
-  * Use the twilio-ruby gem to access the API
-  * Use a Gemfile to manage your gems
-  * Make sure that your Takeaway is thoroughly tested and that you use mocks and/or stubs, as necessary to not to send texts when your tests are run
-  * However, if your Takeaway is loaded into IRB and the order is placed, the text should actually be sent
+Features included:
 
-* A free account on Twilio will only allow you to send texts to "verified" numbers. Use your mobile phone number, don't worry about the customer's mobile phone.
-* Finally submit a pull request before Monday at 9am with your solution or partial solution.  However much or little amount of code you wrote please please please submit a pull request before Monday at 9am
+* A list of dishes with prices
+* Ability to assemble a list of items to order
+* Ability to place an order by calling the appropriate method.
+* Will receive a text stating that the order was received and that it will be there in 1 hour.
 
+Largely unit/feature tested (aside from Twilio calls etc.)
 
-**Note: We are looking for good OO design and programming! Remember the Single Responsibility and Dependency Injection/Inversion principles!**
+# Installation
+
+Clone this repo and run ```bundle``` and then ```rspec```. To use the twilio functionality, you will need to create your own twilio account and enter your account details in the appropriate places.
 
 [![Build Status](https://travis-ci.org/makersacademy/takeaway-challenge.svg?branch=master)](https://travis-ci.org/makersacademy/takeaway-challenge)
 [![Coverage Status](https://coveralls.io/repos/makersacademy/takeaway-challenge/badge.png)](https://coveralls.io/r/makersacademy/takeaway-challenge)
