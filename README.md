@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/makersacademy/takeaway-challenge.svg?branch=master)](https://travis-ci.org/makersacademy/takeaway-challenge)
+[![Coverage Status](https://coveralls.io/repos/makersacademy/takeaway-challenge/badge.png)](https://coveralls.io/r/makersacademy/takeaway-challenge)
+
 Takeaway Challenge
 ==================
 
@@ -36,6 +39,3 @@ Largely unit/feature tested (aside from Twilio calls etc.)
 # Installation
 
 Clone this repo and run ```bundle``` and then ```rspec```. To use the twilio functionality, you will need to create your own twilio account and enter your account details in the appropriate places.
-
-[![Build Status](https://travis-ci.org/makersacademy/takeaway-challenge.svg?branch=master)](https://travis-ci.org/makersacademy/takeaway-challenge)
-[![Coverage Status](https://coveralls.io/repos/makersacademy/takeaway-challenge/badge.png)](https://coveralls.io/r/makersacademy/takeaway-challenge)
